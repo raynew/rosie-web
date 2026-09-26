@@ -421,7 +421,7 @@ a:focus-visible {
     linear-gradient(0deg, rgba(16, 18, 15, 0.48), transparent 66%);
 }
 
-.hero-image { object-position: center 30%; }
+.hero-image { object-position: center top; }
 .hero-kicker { letter-spacing: 0.11em; }
 .hero-title { font-size: 8.25rem; }
 .hero-sub { max-width: 36ch; }
