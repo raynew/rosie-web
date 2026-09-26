@@ -34,7 +34,7 @@
           <a href="https://purpleport.com/portfolio/rosiehobbit/" data-link="profile" class="btn btn-light" target="_blank" rel="noopener noreferrer">Book Rosie <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <a class="hero-credit" href="https://purpleport.com/portfolio/rosiehobbit/image/9014414/model" target="_blank" rel="noopener noreferrer">Red Dress · view on PurplePort ↗</a>
+      <p class="hero-credit">Red Dress</p>
     </section>
 
     <section id="work" class="section gallery-section">
@@ -46,39 +46,49 @@
         <a class="feed-label" href="https://purpleport.com/portfolio/rosiehobbit/" data-link="profile" target="_blank" rel="noopener noreferrer">Full portfolio <span aria-hidden="true">↗</span></a>
       </div>
       <div class="gallery" aria-label="Selected photographs">
-        <a class="gallery-tile" href="https://purpleport.com/portfolio/rosiehobbit/image/9532585/model" target="_blank" rel="noopener noreferrer">
+        <button class="gallery-tile" type="button" aria-label="Enlarge Out there portrait">
           <img src="https://1.prplcdn.com/i/p/3370/337066-a1783370455121.jpg?1783370504" alt="Rosie in an ethereal portrait titled Out there" loading="lazy" />
           <span class="tile-caption">Out there</span>
-        </a>
-        <a class="gallery-tile" href="https://purpleport.com/portfolio/rosiehobbit/image/9274720/model" target="_blank" rel="noopener noreferrer">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Enlarge Vase portrait">
           <img src="https://1.prplcdn.com/i/p/3370/337066-a1769959978325.jpg?1769981989" alt="Rosie in the Vase portrait series" loading="lazy" />
           <span class="tile-caption">Vase</span>
-        </a>
-        <a class="gallery-tile" href="https://purpleport.com/portfolio/rosiehobbit/image/9070865/model" target="_blank" rel="noopener noreferrer">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Enlarge Pearly and Pink portrait">
           <img src="https://1.prplcdn.com/i/p/3370/337066-a1759515657399.jpg?1759515789" alt="Rosie in a pearly pink editorial portrait" loading="lazy" />
           <span class="tile-caption">Pearly &amp; Pink</span>
-        </a>
-        <a class="gallery-tile" href="https://purpleport.com/portfolio/rosiehobbit/image/9218090/model" target="_blank" rel="noopener noreferrer">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Enlarge Cloudy Skies portrait">
           <img src="https://1.prplcdn.com/i/p/3370/337066-a1767128888912.jpg?1767129617" alt="Rosie in the Cloudy Skies portrait series" loading="lazy" />
           <span class="tile-caption">Cloudy Skies</span>
-        </a>
-        <a class="gallery-tile" href="https://purpleport.com/portfolio/rosiehobbit/image/9019774/model" target="_blank" rel="noopener noreferrer">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Enlarge Roses and Pearls portrait">
           <img src="https://1.prplcdn.com/i/p/3370/337066-a1757012390326.jpg?1757012678" alt="Rosie in a portrait with roses and pearls" loading="lazy" />
           <span class="tile-caption">Roses and Pearls</span>
-        </a>
-        <a class="gallery-tile" href="https://purpleport.com/portfolio/rosiehobbit/image/9014414/model" target="_blank" rel="noopener noreferrer">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Enlarge Red Dress portrait">
           <img src="https://1.prplcdn.com/i/p/3370/337066-a1756767234331.jpg?1756767863" alt="Rosie in a red dress" loading="lazy" />
           <span class="tile-caption">Red Dress</span>
-        </a>
+        </button>
       </div>
       <a class="text-link" href="https://www.instagram.com/rosie_the_hobbit/" data-link="instagram" target="_blank" rel="noopener noreferrer">Follow Rosie on Instagram <span aria-hidden="true">↗</span></a>
     </section>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+      <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photo">←</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" alt="" />
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photo">→</button>
+    </dialog>
 
     <section id="about" class="section about">
       <div class="about-grid">
         <div class="about-image-wrap">
           <img class="about-image" src="https://1.prplcdn.com/i/p/3370/337066-a1769960162937.jpg?1769960529" alt="Portrait of Rosie from her PurplePort portfolio" loading="lazy" />
-          <a class="image-note" href="https://purpleport.com/portfolio/rosiehobbit/image/9274726/model" target="_blank" rel="noopener noreferrer">View photograph ↗</a>
+          <span class="image-note">Portrait study</span>
         </div>
         <div class="about-text">
           <p class="section-kicker">A little about me</p>

@@ -443,10 +443,17 @@ h2 { max-width: 14ch; font-size: 3.8rem; }
 .gallery { gap: 1rem; }
 .gallery-tile {
   display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
   aspect-ratio: 4 / 5;
   background: #d7cfc2;
   color: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
 }
+.gallery-tile:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .gallery-tile img { object-position: center; }
 .gallery-tile::after {
   position: absolute;
@@ -549,5 +556,60 @@ h2 { max-width: 14ch; font-size: 3.8rem; }
   .contact-facts span + span::before { margin-right: 1rem; }
   .contact-links { align-items: stretch; flex-direction: column; width: min(100%, 300px); }
   .site-footer { padding: 1.25rem 1.1rem 1.5rem; }
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 4.5rem clamp(3.5rem, 8vw, 8rem) 3rem;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  color: #f2eee6;
+  overscroll-behavior: contain;
+}
+
+.lightbox[open] {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 48px;
+  align-items: center;
+  gap: clamp(1rem, 4vw, 4rem);
+}
+
+.lightbox::backdrop { background: rgba(12, 13, 12, 0.94); }
+.lightbox-figure { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; min-width: 0; margin: 0; }
+.lightbox-figure img { display: block; width: auto; max-width: 100%; height: auto; max-height: calc(100dvh - 9rem); object-fit: contain; }
+.lightbox-figure figcaption { color: rgba(242, 238, 230, 0.86); font-family: var(--serif); font-size: 1.35rem; text-align: center; }
+
+.lightbox button {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid rgba(242, 238, 230, 0.58);
+  background: rgba(20, 21, 20, 0.4);
+  color: #f2eee6;
+  font: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lightbox button:hover { background: #f2eee6; color: var(--ink); }
+.lightbox button:focus-visible { outline: 2px solid #c5e66a; outline-offset: 4px; }
+.lightbox .lightbox-close { position: absolute; top: 1.25rem; right: 1.25rem; font-size: 1.9rem; }
+
+@media (max-width: 520px) {
+  .lightbox { padding: 4.5rem 0.65rem 2rem; }
+  .lightbox[open] { grid-template-columns: 40px minmax(0, 1fr) 40px; gap: 0.35rem; }
+  .lightbox button { width: 40px; height: 40px; }
+  .lightbox .lightbox-close { top: 1rem; right: 1rem; }
+  .lightbox-figure img { max-height: calc(100dvh - 9rem); }
 }
 
