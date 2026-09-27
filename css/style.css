@@ -281,16 +281,6 @@ h2 {
   object-fit: cover;
 }
 
-.image-note {
-  position: absolute;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  padding: 0.35rem 0.6rem;
-  background: rgba(23, 25, 24, 0.78);
-  color: #fff;
-  font-size: 0.7rem;
-}
-
 .about-text { max-width: 570px; }
 .about-text h2 { max-width: 9ch; margin-bottom: 1.5rem; }
 .about-text p:not(.section-kicker) { max-width: 52ch; color: var(--muted); }
@@ -478,12 +468,6 @@ h2 { max-width: 14ch; font-size: 3.8rem; }
 .about { background: #e9e2d7; }
 .about-grid { gap: clamp(2rem, 7vw, 6rem); }
 .about-image { aspect-ratio: 4 / 5; }
-.image-note {
-  padding: 0.5rem 0.75rem;
-  background: var(--ink);
-  text-decoration: none;
-}
-.image-note:hover { background: var(--accent); }
 .about-text h2 { max-width: 10ch; }
 .about-text p:not(.section-kicker) { color: #514c46; }
 .about-signature { font-style: italic; }
